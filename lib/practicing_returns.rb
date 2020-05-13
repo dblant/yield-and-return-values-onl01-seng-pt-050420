@@ -6,8 +6,9 @@ def hello(array)
     
     yield(array[i])
     i += 1
+    hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
   end
-  hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
+  
 end
 
 
